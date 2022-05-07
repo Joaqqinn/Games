@@ -1,0 +1,49 @@
+﻿  bullet.cpp
+  enemy.cpp
+C:\Users\joaqu\source\repos\TP2 MAVI\TP2 MAVI\enemy.cpp(8,36): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\joaqu\source\repos\TP2 MAVI\TP2 MAVI\enemy.cpp(10,36): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\joaqu\source\repos\TP2 MAVI\TP2 MAVI\enemy.cpp(10,29): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\joaqu\source\repos\TP2 MAVI\TP2 MAVI\enemy.cpp(15,38): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\joaqu\source\repos\TP2 MAVI\TP2 MAVI\enemy.cpp(17,38): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\joaqu\source\repos\TP2 MAVI\TP2 MAVI\enemy.cpp(17,31): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\joaqu\source\repos\TP2 MAVI\TP2 MAVI\enemy.cpp(19,24): warning C4244: '=': conversión de 'int' a 'T'; posible pérdida de datos
+          with
+          [
+              T=float
+          ]
+C:\Users\joaqu\source\repos\TP2 MAVI\TP2 MAVI\enemy.cpp(20,28): warning C4244: '=': conversión de 'int' a 'T'; posible pérdida de datos
+          with
+          [
+              T=float
+          ]
+  game.cpp
+C:\Users\joaqu\source\repos\TP2 MAVI\TP2 MAVI\ship.h(23,61): warning C4244: 'return': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\joaqu\source\repos\TP2 MAVI\TP2 MAVI\game.cpp(6,64): warning C4244: 'argumento': conversión de 'T' a 'unsigned int'; posible pérdida de datos
+          with
+          [
+              T=float
+          ]
+C:\Users\joaqu\source\repos\TP2 MAVI\TP2 MAVI\game.cpp(6,50): warning C4244: 'argumento': conversión de 'T' a 'unsigned int'; posible pérdida de datos
+          with
+          [
+              T=float
+          ]
+C:\Users\joaqu\source\repos\TP2 MAVI\TP2 MAVI\game.cpp(355,39): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\joaqu\source\repos\TP2 MAVI\TP2 MAVI\game.cpp(495,131): warning C4244: 'argumento': conversión de 'const T' a 'int'; posible pérdida de datos
+          with
+          [
+              T=float
+          ]
+C:\Users\joaqu\source\repos\TP2 MAVI\TP2 MAVI\game.cpp(495,83): warning C4244: 'argumento': conversión de 'const T' a 'int'; posible pérdida de datos
+          with
+          [
+              T=float
+          ]
+  main.cpp
+C:\Users\joaqu\source\repos\TP2 MAVI\TP2 MAVI\ship.h(23,61): warning C4244: 'return': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\joaqu\source\repos\TP2 MAVI\TP2 MAVI\main.cpp(10,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  ship.cpp
+C:\Users\joaqu\source\repos\TP2 MAVI\TP2 MAVI\ship.h(23,61): warning C4244: 'return': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\joaqu\source\repos\TP2 MAVI\TP2 MAVI\ship.cpp(11,31): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  Generando código...
+  TP2 MAVI.vcxproj -> C:\Users\joaqu\source\repos\TP2 MAVI\x64\Debug\TP2 MAVI.exe

@@ -1,0 +1,20 @@
+﻿  inocente.cpp
+C:\Users\joaqu\source\repos\TP1 MAVI\TP1 MAVI\inocente.cpp(11,33): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  juego.cpp
+C:\Users\joaqu\source\repos\TP1 MAVI\TP1 MAVI\juego.cpp(21,64): warning C4244: 'argumento': conversión de 'T' a 'unsigned int'; posible pérdida de datos
+          with
+          [
+              T=float
+          ]
+C:\Users\joaqu\source\repos\TP1 MAVI\TP1 MAVI\juego.cpp(21,50): warning C4244: 'argumento': conversión de 'T' a 'unsigned int'; posible pérdida de datos
+          with
+          [
+              T=float
+          ]
+C:\Users\joaqu\source\repos\TP1 MAVI\TP1 MAVI\juego.cpp(136,30): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  main.cpp
+C:\Users\joaqu\source\repos\TP1 MAVI\TP1 MAVI\main.cpp(10,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  enemigos.cpp
+C:\Users\joaqu\source\repos\TP1 MAVI\TP1 MAVI\enemigos.cpp(18,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  Generando código...
+  TP1 MAVI.vcxproj -> C:\Users\joaqu\source\repos\TP1 MAVI\x64\Debug\TP1 MAVI.exe
