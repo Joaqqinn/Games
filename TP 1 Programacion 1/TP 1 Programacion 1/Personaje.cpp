@@ -7,20 +7,18 @@ Personaje::Personaje(int x, int y) {
 	posicionTerrenoY = x;
 	maxAscensoSaltoY = y;
 
-	anim = new Afichmation("images/spritesheet.png", true, 208, 249);
+	anim = new Afichmation("images/spritesheet.png", true, 104, 125);
 	anim->setScale(0.6f, 0.6f);
-	anim->setPosition(50, 500);
-	// Añadimos animaciones con metodo add
-	/*1. nombre animacion
-	2. indicar los frames usados para la animacion
-	3. cantidad de frames por segundo
-	4. indicar si la animacion se repite en bucle o no*/
+	anim->setPosition(50, 495);
+	//DEFINICION DE ESTADOS DE ANIM
 	anim->Add("idle", { 0, 1, 2, 0, 1, 2 }, 5, true);
 	anim->Add("run", { 3, 4, 5, 6, 7 }, 8, true);
-	anim->Add("jump", { 0, 12, 13, 14 }, 8, true);
-	//ejecuto una animacion pasandole el nombre que use 
+	anim->Add("jump", { 12 }, 10, true);
 	anim->Play("idle");
 	anim->FlipX(true);
+
+	initializer();
+
 }
 
 void Personaje::initializer() {
@@ -41,6 +39,7 @@ void Personaje::update_jump(bool teclaSaltoPresionada, float delta_time_seconds)
 
 	//Bloque que maneja el salto y su descenso a través del eje y.
 	if (saltoEnProceso) {
+		anim->Play("jump");
 
 		//Se controla cuando se llega al maximo de altura de salto
 		if (anim->getPosition().y <= posicionTerrenoY - maxAscensoSaltoY) {
@@ -70,12 +69,10 @@ void Personaje::movement(float delta_time_seconds) {
 	if (Keyboard::isKeyPressed(Keyboard::Escape)) {
 		exit(1);
 	}
-	//si presiono la tecla A
 	if (Keyboard::isKeyPressed(Keyboard::A) && (anim->getPosition().x > 40)) {
-		//ejecuto la animacion "run" para correr y desplazarse a la izquierda
 		anim->Play("run");
-		//metodo flip voltear el sprite en X
 		anim->FlipX(false);
+		anim->move(-1.0f * SPEED_X * delta_time_seconds, 0.0f);
 	}
 	else {
 		anim->Play("idle");
@@ -83,9 +80,9 @@ void Personaje::movement(float delta_time_seconds) {
 	if (Keyboard::isKeyPressed(Keyboard::D) && (anim->getPosition().x < 760)) {
 		anim->Play("run");
 		anim->FlipX(true);
+		anim->move(1.0f * SPEED_X * delta_time_seconds, 0.0f);
 	}
 	if (Keyboard::isKeyPressed(Keyboard::Space)) {
-		anim->Play("jump");
 		sound_jump.play();
 	}
 
@@ -93,6 +90,13 @@ void Personaje::movement(float delta_time_seconds) {
 
 void Personaje::drawing(RenderWindow* v) {
 
+	
 	v->draw(*anim);
+
+}
+
+FloatRect Personaje::get_bounds() {
+
+	return anim->getGlobalBounds();
 
 }

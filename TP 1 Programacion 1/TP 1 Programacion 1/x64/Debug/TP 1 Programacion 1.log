@@ -1,20 +1,6 @@
-﻿  Game.cpp
-C:\Users\joaqu\source\repos\TP 1 Programacion 1\TP 1 Programacion 1\Game.cpp(5,64): warning C4244: 'argumento': conversión de 'T' a 'unsigned int'; posible pérdida de datos
-          with
-          [
-              T=float
-          ]
-C:\Users\joaqu\source\repos\TP 1 Programacion 1\TP 1 Programacion 1\Game.cpp(5,50): warning C4244: 'argumento': conversión de 'T' a 'unsigned int'; posible pérdida de datos
-          with
-          [
-              T=float
-          ]
-  Main.cpp
-C:\Users\joaqu\source\repos\TP 1 Programacion 1\TP 1 Programacion 1\Main.cpp(8,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-  Personaje.cpp
-C:\Users\joaqu\source\repos\TP 1 Programacion 1\TP 1 Programacion 1\Game.h(18,11): error C2143: error de sintaxis: falta ';' delante de '*'
-C:\Users\joaqu\source\repos\TP 1 Programacion 1\TP 1 Programacion 1\Game.h(18,11): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-C:\Users\joaqu\source\repos\TP 1 Programacion 1\TP 1 Programacion 1\Game.h(18,20): error C2238: símbolos (token) inesperados delante de ';'
-C:\Users\joaqu\source\repos\TP 1 Programacion 1\TP 1 Programacion 1\Personaje.cpp(11,25): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\joaqu\source\repos\TP 1 Programacion 1\TP 1 Programacion 1\Personaje.cpp(61,45): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-  Generando código...
+﻿  Bloque.cpp
+C:\Users\joaqu\source\repos\TP 1 Programacion 1\TP 1 Programacion 1\Bloque.cpp(35,33): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\joaqu\source\repos\TP 1 Programacion 1\TP 1 Programacion 1\Bloque.cpp(35,26): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\joaqu\source\repos\TP 1 Programacion 1\TP 1 Programacion 1\Bloque.cpp(36,42): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\joaqu\source\repos\TP 1 Programacion 1\TP 1 Programacion 1\Bloque.cpp(36,29): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+  TP 1 Programacion 1.vcxproj -> C:\Users\joaqu\source\repos\TP 1 Programacion 1\x64\Debug\TP 1 Programacion 1.exe

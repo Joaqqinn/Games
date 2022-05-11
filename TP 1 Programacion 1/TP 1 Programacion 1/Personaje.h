@@ -1,18 +1,16 @@
 #pragma once
+#include "SFML/Graphics.hpp"
+#include "SFML/Audio.hpp"
 #include "Afichmation.h"
-#include "Game.h"
-
-using namespace sf;
 
 //DECLARACION DE CONSTANTES
-const float	SPEED_X = 200.0f;
-const float	SPEED_Y = 500.0f;
+const float	SPEED_X = 30.0f;
+const float	SPEED_Y = 30.0f;
 
 class Personaje {
 
 private:
 	Afichmation* anim;
-	//string path;
 	bool saltoEnProceso;
 	bool enAscenso;
 	int	posicionTerrenoY;
@@ -23,9 +21,12 @@ private:
 
 public:
 	Personaje(int x, int y);
-	~Personaje();
-	void initializer();
-	void update_jump(bool teclaSaltoPresionada, float delta_time_seconds);
-	void movement(float delta_time_seconds); //movimiento
-	void drawing(RenderWindow* v);
+	~Personaje() {}
+	void initializer(); //iniciamos variables
+	void update_jump(bool teclaSaltoPresionada, float delta_time_seconds); //actualizamos el salto
+	void movement(float delta_time_seconds); //movimiento por teclas
+	void drawing(RenderWindow* v); //metodo para dibujar el spritesheet
+	FloatRect get_bounds(); //obtener los bounds de nuestro personaje 
+	void stop_jump() { enAscenso = false; } //detenemos la subida del salto
+
 };
